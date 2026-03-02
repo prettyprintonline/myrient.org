@@ -1,0 +1,1708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Myrient is shutting down. Check out the download progress of the Myrient Archive project.">
+    <meta name="keywords" content="Myrient, Archive, Download, Progress, ROMs, Preservation">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Myrient Archive - Download Progress">
+    <meta property="og:description"
+        content="Myrient is shutting down. Check out the download progress of the Myrient Archive project.">
+    <meta property="og:image" content="https://myrient.org/myrient_logo.jpg">
+    <meta property="og:url" content="https://myrient.org/">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="/myrient_logo.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D0WXF2ZQM3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-D0WXF2ZQM3');
+    </script>
+
+    <title>Myrient Archive - Download Progress</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #0d1117;
+            --bg-secondary: #161b22;
+            --bg-tertiary: #21262d;
+            --text-primary: #e6edf3;
+            --text-secondary: #7d8590;
+            --text-muted: #484f58;
+            --border-color: #30363d;
+            --accent-success: #238636;
+            --accent-success-bg: rgba(35, 134, 54, 0.15);
+            --accent-warning: #d29922;
+            --accent-danger: #da3633;
+            --accent-info: #58a6ff;
+            --server1: #58a6ff;
+            --server2: #a371f7;
+            --server3: #f0883e;
+            --server1-bg: rgba(88, 166, 255, 0.12);
+            --server2-bg: rgba(163, 113, 247, 0.12);
+            --server3-bg: rgba(240, 136, 62, 0.12);
+        }
+
+        body {
+            font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.5;
+            min-height: 100vh;
+        }
+
+        /* Countdown Banner */
+        .countdown-banner {
+            background: linear-gradient(90deg, rgba(218, 54, 51, 0.15), rgba(210, 153, 34, 0.15));
+            border-bottom: 1px solid rgba(218, 54, 51, 0.3);
+            padding: 0.5rem 1rem;
+            text-align: center;
+            font-size: 0.875rem;
+            position: sticky;
+            top: 0;
+            z-index: 200;
+            backdrop-filter: blur(8px);
+        }
+
+        .countdown-banner.urgent {
+            background: linear-gradient(90deg, rgba(218, 54, 51, 0.3), rgba(218, 54, 51, 0.15));
+            animation: pulse-bg 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-bg {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.8;
+            }
+        }
+
+        .countdown-text {
+            color: var(--text-primary);
+        }
+
+        .countdown-timer {
+            font-weight: 700;
+            font-variant-numeric: tabular-nums;
+            color: var(--accent-danger);
+            margin-left: 0.5rem;
+        }
+
+        .countdown-banner.urgent .countdown-timer {
+            color: #ff6b6b;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1.25rem 2rem;
+            position: sticky;
+            top: 33px;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, var(--accent-success), var(--accent-info));
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+        }
+
+        .header-stats {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .header-stat {
+            text-align: center;
+        }
+
+        .header-stat-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--accent-success);
+            font-variant-numeric: tabular-nums;
+        }
+
+        .header-stat-label {
+            font-size: 0.6875rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Main */
+        main {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem 2rem;
+        }
+
+        /* Server Cards Grid */
+        .server-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .server-card {
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.25rem;
+            border-top: 3px solid var(--border-color);
+            transition: border-color 0.2s;
+        }
+
+        .server-card:hover {
+            border-color: var(--text-muted);
+        }
+
+        .server-card.server1 {
+            border-top-color: var(--server1);
+        }
+
+        .server-card.server2 {
+            border-top-color: var(--server2);
+        }
+
+        .server-card.server3 {
+            border-top-color: var(--server3);
+        }
+
+        .server-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .server-name {
+            font-size: 1rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .server-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .server-dot.server1 {
+            background: var(--server1);
+        }
+
+        .server-dot.server2 {
+            background: var(--server2);
+        }
+
+        .server-dot.server3 {
+            background: var(--server3);
+        }
+
+        .server-location {
+            font-size: 0.6875rem;
+            padding: 0.125rem 0.5rem;
+            border-radius: 3px;
+            background-color: var(--bg-tertiary);
+            color: var(--text-secondary);
+        }
+
+        .server-disk {
+            margin-bottom: 0.75rem;
+        }
+
+        .disk-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.375rem;
+        }
+
+        .disk-bar-bg {
+            background-color: var(--bg-tertiary);
+            border-radius: 6px;
+            height: 8px;
+            overflow: hidden;
+        }
+
+        .disk-bar-fill {
+            height: 100%;
+            border-radius: 6px;
+            transition: width 0.5s ease;
+        }
+
+        .disk-bar-fill.server1 {
+            background: linear-gradient(90deg, var(--server1), #79bbff);
+        }
+
+        .disk-bar-fill.server2 {
+            background: linear-gradient(90deg, var(--server2), #c9a5ff);
+        }
+
+        .disk-bar-fill.server3 {
+            background: linear-gradient(90deg, var(--server3), #f5a962);
+        }
+
+        .server-meta {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+            font-size: 0.75rem;
+        }
+
+        .server-meta-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .meta-label {
+            color: var(--text-muted);
+            font-size: 0.6875rem;
+        }
+
+        .meta-value {
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .meta-value.speed {
+            color: var(--accent-success);
+        }
+
+        /* Collection Section */
+        .collections-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .collections-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
+
+        .filter-bar {
+            display: flex;
+            gap: 0.375rem;
+        }
+
+        .filter-btn {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            padding: 0.375rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.8125rem;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+
+        .filter-btn:hover {
+            background: var(--border-color);
+            color: var(--text-primary);
+        }
+
+        .filter-btn.active {
+            background: var(--accent-success);
+            border-color: var(--accent-success);
+            color: #fff;
+        }
+
+        .filter-btn.active.f-server1 {
+            background: var(--server1);
+            border-color: var(--server1);
+        }
+
+        .filter-btn.active.f-server2 {
+            background: var(--server2);
+            border-color: var(--server2);
+        }
+
+        .filter-btn.active.f-server3 {
+            background: var(--server3);
+            border-color: var(--server3);
+        }
+
+        /* Collections Grid */
+        .collections-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.75rem;
+        }
+
+        .col-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1rem;
+            border-left: 3px solid var(--border-color);
+            transition: border-color 0.15s, transform 0.1s;
+        }
+
+        .col-card:hover {
+            transform: translateY(-1px);
+        }
+
+        .col-card.s1 {
+            border-left-color: var(--server1);
+        }
+
+        .col-card.s2 {
+            border-left-color: var(--server2);
+        }
+
+        .col-card.s3 {
+            border-left-color: var(--server3);
+        }
+
+        .col-card.complete {
+            border-color: rgba(35, 134, 54, 0.3);
+            border-left-color: var(--accent-success);
+        }
+
+        .col-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.625rem;
+            gap: 0.5rem;
+        }
+
+        .col-name {
+            font-weight: 600;
+            font-size: 0.875rem;
+            line-height: 1.3;
+            word-break: break-word;
+        }
+
+        .col-badge {
+            font-size: 0.625rem;
+            padding: 0.125rem 0.375rem;
+            border-radius: 3px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .col-badge.s1 {
+            background: var(--server1-bg);
+            color: var(--server1);
+        }
+
+        .col-badge.s2 {
+            background: var(--server2-bg);
+            color: var(--server2);
+        }
+
+        .col-badge.s3 {
+            background: var(--server3-bg);
+            color: var(--server3);
+        }
+
+        .col-progress-bar {
+            background: var(--bg-tertiary);
+            border-radius: 4px;
+            height: 6px;
+            overflow: hidden;
+            margin-bottom: 0.5rem;
+        }
+
+        .col-progress-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.5s ease;
+        }
+
+        .col-progress-fill.s1 {
+            background: var(--server1);
+        }
+
+        .col-progress-fill.s2 {
+            background: var(--server2);
+        }
+
+        .col-progress-fill.s3 {
+            background: var(--server3);
+        }
+
+        .col-progress-fill.complete {
+            background: var(--accent-success);
+        }
+
+        .col-stats {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+
+        .col-status {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .col-status.downloading {
+            color: var(--accent-warning);
+        }
+
+        .col-status.complete {
+            color: var(--accent-success);
+        }
+
+        .col-status.queued {
+            color: var(--text-muted);
+        }
+
+        .col-detail {
+            font-size: 0.6875rem;
+            color: var(--text-muted);
+            margin-top: 0.375rem;
+        }
+
+        /* Vault Section */
+        .vault {
+            margin-top: 2.5rem;
+        }
+
+        .vault-toggle {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.875rem 1.25rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.15s, border-color 0.15s;
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: inherit;
+        }
+
+        .vault-toggle:hover {
+            background: var(--bg-tertiary);
+            border-color: var(--text-muted);
+        }
+
+        .vault-toggle.open {
+            border-radius: 10px 10px 0 0;
+            border-bottom-color: transparent;
+        }
+
+        .vault-toggle-left {
+            display: flex;
+            align-items: center;
+            gap: 0.625rem;
+            font-weight: 600;
+            font-size: 0.9375rem;
+        }
+
+        .vault-icon {
+            width: 28px;
+            height: 28px;
+            background: rgba(88, 166, 255, 0.12);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.875rem;
+            color: var(--accent-info);
+        }
+
+        .vault-count {
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--accent-success);
+            background: var(--accent-success-bg);
+            padding: 0.125rem 0.5rem;
+            border-radius: 10px;
+            margin-left: 0.25rem;
+        }
+
+        .vault-chevron {
+            color: var(--text-muted);
+            transition: transform 0.2s;
+            font-size: 0.75rem;
+        }
+
+        .vault-toggle.open .vault-chevron {
+            transform: rotate(180deg);
+        }
+
+        .vault-body {
+            display: none;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-top: none;
+            border-radius: 0 0 10px 10px;
+            overflow: hidden;
+        }
+
+        .vault-body.open {
+            display: block;
+        }
+
+        .vault-empty {
+            padding: 2rem;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+
+        .vault-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .vault-table th {
+            text-align: left;
+            padding: 0.625rem 1.25rem;
+            font-size: 0.6875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            background: var(--bg-tertiary);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .vault-table td {
+            padding: 0.625rem 1.25rem;
+            font-size: 0.8125rem;
+            border-bottom: 1px solid var(--border-color);
+            vertical-align: middle;
+        }
+
+        .vault-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .vault-table tr:hover td {
+            background: rgba(35, 134, 54, 0.04);
+        }
+
+        .vault-name-cell {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .vault-check {
+            color: var(--accent-success);
+            font-size: 0.875rem;
+            flex-shrink: 0;
+        }
+
+        .vault-col-name {
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        .vault-size {
+            color: var(--text-secondary);
+            white-space: nowrap;
+        }
+
+        .vault-server-badge {
+            font-size: 0.625rem;
+            padding: 0.125rem 0.375rem;
+            border-radius: 3px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            white-space: nowrap;
+        }
+
+        .vault-server-badge.s1 {
+            background: var(--server1-bg);
+            color: var(--server1);
+        }
+
+        .vault-server-badge.s2 {
+            background: var(--server2-bg);
+            color: var(--server2);
+        }
+
+        .vault-server-badge.s3 {
+            background: var(--server3-bg);
+            color: var(--server3);
+        }
+
+        .vault-total-row td {
+            background: var(--bg-tertiary);
+            font-weight: 600;
+            font-size: 0.8125rem;
+            color: var(--accent-success);
+            border-bottom: none;
+        }
+
+        .vault-progress {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            min-width: 100px;
+        }
+
+        .vault-progress-bar {
+            flex: 1;
+            height: 5px;
+            background: var(--bg-tertiary);
+            border-radius: 3px;
+            overflow: hidden;
+            min-width: 50px;
+        }
+
+        .vault-progress-fill {
+            height: 100%;
+            border-radius: 3px;
+            transition: width 0.3s;
+        }
+
+        .vault-progress-fill.complete {
+            background: var(--accent-success);
+        }
+
+        .vault-progress-fill.downloading {
+            background: var(--accent-warning);
+        }
+
+        .vault-progress-fill.queued {
+            background: var(--text-muted);
+        }
+
+        .vault-pct {
+            font-size: 0.6875rem;
+            font-variant-numeric: tabular-nums;
+            min-width: 35px;
+            text-align: right;
+        }
+
+        .vault-pct.complete {
+            color: var(--accent-success);
+        }
+
+        .vault-pct.downloading {
+            color: var(--accent-warning);
+        }
+
+        .vault-pct.queued {
+            color: var(--text-muted);
+        }
+
+        .vault-status-icon {
+            font-size: 0.75rem;
+            flex-shrink: 0;
+        }
+
+        .vault-status-icon.complete {
+            color: var(--accent-success);
+        }
+
+        .vault-status-icon.downloading {
+            color: var(--accent-warning);
+        }
+
+        .vault-status-icon.queued {
+            color: var(--text-muted);
+        }
+
+        .vault-expand {
+            display: inline-block;
+            width: 16px;
+            font-size: 0.625rem;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: transform 0.15s;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .vault-expand.open {
+            transform: rotate(90deg);
+        }
+
+        .vault-row {
+            cursor: pointer;
+        }
+
+        .vault-row:hover td {
+            background: rgba(35, 134, 54, 0.06);
+        }
+
+        .vault-contents-cell {
+            padding: 0 !important;
+        }
+
+        .vault-tree {
+            background: var(--bg-primary);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .vault-entry {
+            display: flex;
+            align-items: center;
+            gap: 0.625rem;
+            padding: 0.4375rem 1.25rem 0.4375rem 2.5rem;
+            font-size: 0.8125rem;
+            border-bottom: 1px solid rgba(48, 54, 61, 0.4);
+        }
+
+        .vault-entry:last-child {
+            border-bottom: none;
+        }
+
+        .vault-entry:hover {
+            background: rgba(48, 54, 61, 0.3);
+        }
+
+        .vault-entry-icon {
+            color: var(--accent-warning);
+            font-size: 0.75rem;
+            flex-shrink: 0;
+            width: 14px;
+            text-align: center;
+        }
+
+        .vault-entry-name {
+            flex: 1;
+            color: var(--text-primary);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            min-width: 0;
+        }
+
+        .vault-entry-bar {
+            width: 80px;
+            height: 4px;
+            background: var(--bg-tertiary);
+            border-radius: 2px;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .vault-entry-bar-fill {
+            height: 100%;
+            border-radius: 2px;
+            background: var(--accent-success);
+            opacity: 0.6;
+        }
+
+        .vault-entry-size {
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            white-space: nowrap;
+            flex-shrink: 0;
+            min-width: 60px;
+            text-align: right;
+        }
+
+        .vault-tree-empty {
+            padding: 1rem 2.5rem;
+            color: var(--text-muted);
+            font-size: 0.8125rem;
+            font-style: italic;
+        }
+
+        @media (max-width: 640px) {
+
+            .vault-table th:nth-child(3),
+            .vault-table td:nth-child(3),
+            .vault-table th:nth-child(4),
+            .vault-table td:nth-child(4) {
+                display: none;
+            }
+
+            .vault-table th,
+            .vault-table td {
+                padding: 0.5rem 0.75rem;
+            }
+
+            .vault-entry {
+                padding-left: 1.5rem;
+            }
+
+            .vault-entry-bar {
+                display: none;
+            }
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.8125rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 2rem;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer a {
+            color: var(--accent-info);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Loading */
+        .loading-overlay {
+            position: fixed;
+            inset: 0;
+            background: var(--bg-primary);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            transition: opacity 0.3s, visibility 0.3s;
+        }
+
+        .loading-overlay.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid var(--bg-tertiary);
+            border-top-color: var(--accent-success);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin-bottom: 1rem;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .server-cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .server-cards .server-card:last-child {
+                grid-column: 1 / -1;
+            }
+
+            .collections-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 640px) {
+            .countdown-banner {
+                font-size: 0.75rem;
+            }
+
+            header {
+                padding: 1rem;
+                top: 29px;
+            }
+
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .header-stats {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            main {
+                padding: 1rem;
+            }
+
+            .server-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .server-cards .server-card:last-child {
+                grid-column: auto;
+            }
+
+            .collections-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .filter-bar {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Loading -->
+    <div class="loading-overlay" id="loading">
+        <div class="spinner"></div>
+        <p style="color: var(--text-secondary);">Loading archive data...</p>
+    </div>
+
+    <!-- Closure Banner -->
+    <div class="countdown-banner urgent" id="closure-banner">
+        <span class="countdown-text" style="font-weight: bold;">NOTICE: The main Myrient website (myrient.erista.me) has
+            recently shut down. This is an archive project.</span>
+    </div>
+
+    <!-- Countdown Banner -->
+    <div class="countdown-banner" id="countdown-banner">
+        <span class="countdown-text">Myrient shuts down</span>
+        <span class="countdown-timer" id="countdown-timer">--d --h --m --s</span>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <a href="#" class="logo">
+                <div class="logo-icon">M</div>
+                <span>Myrient Archive</span>
+            </a>
+            <div class="header-stats">
+                <div class="header-stat">
+                    <div class="header-stat-value" id="h-total-downloaded">--</div>
+                    <div class="header-stat-label">Downloaded</div>
+                </div>
+                <div class="header-stat">
+                    <div class="header-stat-value" id="h-days-left">--</div>
+                    <div class="header-stat-label">Days Left</div>
+                </div>
+                <div class="header-stat">
+                    <div class="header-stat-value" id="h-collections">--</div>
+                    <div class="header-stat-label">Collections</div>
+                </div>
+                <div class="header-stat">
+                    <div class="header-stat-value">3</div>
+                    <div class="header-stat-label">Servers</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Server Cards -->
+        <div class="server-cards" id="server-cards">
+            <!-- Populated by JS -->
+        </div>
+
+        <!-- Collections -->
+        <div class="collections-header">
+            <h2 class="collections-title">Collections</h2>
+            <div class="filter-bar" id="filter-bar">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn f-server1" data-filter="archive1">Archive 1</button>
+                <button class="filter-btn f-server2" data-filter="archive2">Archive 2</button>
+                <button class="filter-btn f-server3" data-filter="archive3">Archive 3</button>
+            </div>
+        </div>
+        <div class="collections-grid" id="collections-grid"></div>
+
+        <!-- Archive Inventory -->
+        <div class="vault" id="vault">
+            <button class="vault-toggle" id="vault-toggle">
+                <span class="vault-toggle-left">
+                    <span class="vault-icon">&#9776;</span>
+                    Archive Inventory
+                    <span class="vault-count" id="vault-count">0</span>
+                </span>
+                <span class="vault-chevron">&#9660;</span>
+            </button>
+            <div class="vault-body" id="vault-body">
+                <div class="vault-empty">No collections yet</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Myrient Archive Mirror &middot; 3-Server Progress Tracker</p>
+            <p>
+                <a href="https://github.com/kawaii-not-kawaii/myrient-archieve" target="_blank"
+                    rel="noopener noreferrer">⭐ Star the original project on GitHub!</a>
+            </p>
+            <p>
+                Please consider supporting the original creators: <a href="https://myrient.erista.me/donate/"
+                    target="_blank" rel="noopener noreferrer">Donate to Myrient</a>
+            </p>
+            <p style="margin-top: 0.375rem; font-size: 0.75rem;">
+                Auto-refreshes every 5 minutes &middot;
+                <a href="https://github.com/kawaii-not-kawaii/myrient-archieve" target="_blank">Source</a>
+            </p>
+            <p style="margin-top: 0.375rem; font-size: 0.6875rem; color: var(--text-muted);">
+                Disk allocated &gt; content downloaded because rclone pre-allocates full file sizes before writing data.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // ── Constants ──
+        const DEADLINE = new Date('2026-03-31T23:59:59Z');
+
+        const SERVER_META = {
+            archive1: { name: 'Archive 1', location: 'Hetzner Finland', color: 'server1', diskTotal: '44T' },
+            archive2: { name: 'Archive 2', location: 'Hetzner Finland', color: 'server2', diskTotal: '57T' },
+            archive3: { name: 'Archive 3', location: 'Leaseweb Canada', color: 'server3', diskTotal: '44T' }
+        };
+
+        const DATA_FILES = {
+            archive1: 'download_status.json',
+            archive2: 'download_status_archive2.json',
+            archive3: 'download_status_archive3.json'
+        };
+
+        // ── State ──
+        let serverData = { archive1: null, archive2: null, archive3: null };
+        let manifests = { archive1: null, archive2: null, archive3: null };
+        let assignments = null;
+        let activeFilter = 'all';
+
+        // ── Helpers ──
+        function formatBytes(bytes) {
+            if (!bytes || bytes <= 0) return '0 B';
+            const k = 1000;
+            const units = ['B', 'KB', 'MB', 'GB', 'TB', 'PB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + units[i];
+        }
+
+        function parseDiskTotal(s) {
+            if (!s) return 0;
+            const m = s.match(/([\d.]+)\s*T/i);
+            return m ? parseFloat(m[1]) * 1024 * 1024 * 1024 * 1024 : 0;
+        }
+
+        function timeAgo(ts) {
+            if (!ts) return 'unknown';
+            const diff = Math.floor((Date.now() - new Date(ts).getTime()) / 1000);
+            if (diff < 60) return 'just now';
+            if (diff < 3600) return Math.floor(diff / 60) + 'm ago';
+            if (diff < 86400) return Math.floor(diff / 3600) + 'h ago';
+            return Math.floor(diff / 86400) + 'd ago';
+        }
+
+        function pct(a, b) {
+            if (!b || b <= 0) return 0;
+            return Math.min((a / b) * 100, 100);
+        }
+
+        // ── Countdown ──
+        function updateCountdown() {
+            const now = Date.now();
+            const diff = DEADLINE.getTime() - now;
+            const banner = document.getElementById('countdown-banner');
+            const el = document.getElementById('countdown-timer');
+
+            if (diff <= 0) {
+                el.textContent = 'SHUTDOWN';
+                banner.classList.add('urgent');
+                return;
+            }
+
+            const d = Math.floor(diff / 86400000);
+            const h = Math.floor((diff % 86400000) / 3600000);
+            const m = Math.floor((diff % 3600000) / 60000);
+            const s = Math.floor((diff % 60000) / 1000);
+            el.textContent = d + 'd ' + h + 'h ' + m + 'm ' + s + 's';
+
+            if (d < 7) banner.classList.add('urgent');
+
+            document.getElementById('h-days-left').textContent = d;
+        }
+
+        // ── Data Loading ──
+        async function loadData() {
+            const fetches = Object.entries(DATA_FILES).map(async ([key, file]) => {
+                try {
+                    const r = await fetch(file + '?t=' + Date.now());
+                    if (r.ok) serverData[key] = await r.json();
+                } catch (_) { /* offline */ }
+            });
+
+            try {
+                const r = await fetch('server_assignments.json?t=' + Date.now());
+                if (r.ok) assignments = await r.json();
+            } catch (_) { /* ok */ }
+
+            // Load manifests
+            for (var mKey of ['archive1', 'archive2', 'archive3']) {
+                try {
+                    var mr = await fetch('manifests/' + mKey + '.json?t=' + Date.now());
+                    if (mr.ok) manifests[mKey] = await mr.json();
+                } catch (_) { /* ok */ }
+            }
+
+            await Promise.all(fetches);
+            render();
+            document.getElementById('loading').classList.add('hidden');
+        }
+
+        // ── Render ──
+        function render() {
+            renderHeader();
+            renderServerCards();
+            renderCollections();
+            renderVault();
+        }
+
+        function renderHeader() {
+            let totalBytes = 0;
+            let totalCollections = 0;
+
+            for (const key of Object.keys(serverData)) {
+                const d = serverData[key];
+                if (!d) continue;
+                // Sum actual content bytes from collections, not disk_used_bytes
+                // (disk_used_bytes includes rclone pre-allocated space for incomplete files)
+                if (d.collections) {
+                    for (const col of d.collections) {
+                        totalBytes += col.downloaded_bytes || 0;
+                    }
+                    totalCollections += d.collections.length;
+                }
+            }
+
+            document.getElementById('h-total-downloaded').textContent = formatBytes(totalBytes);
+            document.getElementById('h-collections').textContent = totalCollections || '--';
+        }
+
+        function renderServerCards() {
+            const container = document.getElementById('server-cards');
+            container.innerHTML = '';
+
+            for (const [key, meta] of Object.entries(SERVER_META)) {
+                const d = serverData[key];
+                const diskTotalBytes = parseDiskTotal(meta.diskTotal);
+
+                let diskUsedStr = '--';
+                let diskPct = 0;
+                let contentBytes = 0;
+                let speed = '--';
+                let eta = '--';
+                let colCount = 0;
+                let lastUpdated = '--';
+
+                if (d) {
+                    diskUsedStr = d.disk_used || d.download_human || '--';
+                    diskPct = d.disk_percent || 0;
+                    if (typeof diskPct === 'string') diskPct = parseFloat(diskPct);
+                    if (d.disk_used_bytes && diskTotalBytes > 0) {
+                        diskPct = pct(d.disk_used_bytes, diskTotalBytes);
+                    }
+                    colCount = (d.collections || []).length;
+                    lastUpdated = timeAgo(d.timestamp);
+
+                    // Sum actual content downloaded from collections
+                    if (d.collections) {
+                        for (const col of d.collections) {
+                            contentBytes += col.downloaded_bytes || 0;
+                        }
+                    }
+
+                    // Aggregate speed from collections
+                    if (d.collections) {
+                        const speeds = d.collections
+                            .map(c => c.speed)
+                            .filter(s => s && s !== '--');
+                        if (speeds.length > 0) speed = speeds.join(', ');
+                    }
+
+                    // Aggregate ETAs
+                    if (d.collections) {
+                        const etas = d.collections
+                            .filter(c => c.eta && c.eta !== '--' && c.status === 'downloading')
+                            .map(c => c.eta);
+                        if (etas.length > 0) eta = etas[0] + (etas.length > 1 ? ' (+' + (etas.length - 1) + ' more)' : '');
+                    }
+                }
+
+                const online = d !== null;
+                const contentStr = contentBytes > 0 ? formatBytes(contentBytes) : '--';
+                const card = document.createElement('div');
+                card.className = 'server-card ' + meta.color;
+                card.innerHTML =
+                    '<div class="server-card-header">' +
+                    '<div class="server-name">' +
+                    '<span class="server-dot ' + meta.color + '"></span>' +
+                    meta.name +
+                    '</div>' +
+                    '<span class="server-location">' + meta.location + '</span>' +
+                    '</div>' +
+                    '<div class="server-disk">' +
+                    '<div class="disk-label">' +
+                    '<span>Disk Allocated: ' + diskUsedStr + ' / ' + meta.diskTotal + '</span>' +
+                    '<span>' + diskPct.toFixed(1) + '%</span>' +
+                    '</div>' +
+                    '<div class="disk-bar-bg">' +
+                    '<div class="disk-bar-fill ' + meta.color + '" style="width:' + Math.min(diskPct, 100) + '%"></div>' +
+                    '</div>' +
+                    '<div style="font-size:0.6875rem;color:var(--text-muted);margin-top:0.25rem;">Content downloaded: ' + contentStr + '</div>' +
+                    '</div>' +
+                    '<div class="server-meta">' +
+                    '<div class="server-meta-item">' +
+                    '<span class="meta-label">Collections</span>' +
+                    '<span class="meta-value">' + colCount + '</span>' +
+                    '</div>' +
+                    '<div class="server-meta-item">' +
+                    '<span class="meta-label">Status</span>' +
+                    '<span class="meta-value" style="color:' + (online ? 'var(--accent-success)' : 'var(--accent-danger)') + '">' + (online ? 'Online' : 'Offline') + '</span>' +
+                    '</div>' +
+                    '<div class="server-meta-item">' +
+                    '<span class="meta-label">Speed</span>' +
+                    '<span class="meta-value speed">' + speed + '</span>' +
+                    '</div>' +
+                    '<div class="server-meta-item">' +
+                    '<span class="meta-label">Updated</span>' +
+                    '<span class="meta-value">' + lastUpdated + '</span>' +
+                    '</div>' +
+                    '</div>';
+
+                container.appendChild(card);
+            }
+        }
+
+        function renderCollections() {
+            const grid = document.getElementById('collections-grid');
+            grid.innerHTML = '';
+
+            const allCollections = [];
+
+            // Gather collections from each server's status JSON
+            for (const [serverKey, meta] of Object.entries(SERVER_META)) {
+                const d = serverData[serverKey];
+                if (!d || !d.collections) continue;
+
+                for (const col of d.collections) {
+                    allCollections.push({
+                        name: col.name,
+                        server: serverKey,
+                        serverColor: meta.color,
+                        downloadedBytes: col.downloaded_bytes || 0,
+                        downloadedHuman: col.downloaded_human || '--',
+                        targetTib: col.target_tib || 0,
+                        percent: col.percent || 0,
+                        speed: col.speed || '--',
+                        eta: col.eta || '--',
+                        status: col.status || 'downloading'
+                    });
+                }
+            }
+
+            // If no live collection data, fall back to server_assignments.json
+            if (allCollections.length === 0 && assignments && assignments.servers) {
+                for (const [serverKey, srv] of Object.entries(assignments.servers)) {
+                    const meta = SERVER_META[serverKey];
+                    if (!meta || !srv.collections) continue;
+                    for (const col of srv.collections) {
+                        allCollections.push({
+                            name: col.name,
+                            server: serverKey,
+                            serverColor: meta.color,
+                            downloadedBytes: 0,
+                            downloadedHuman: '--',
+                            targetTib: col.size_tib || 0,
+                            percent: 0,
+                            speed: '--',
+                            eta: '--',
+                            status: col.status || 'queued'
+                        });
+                    }
+                }
+            }
+
+            // Filter
+            const filtered = activeFilter === 'all'
+                ? allCollections
+                : allCollections.filter(c => c.server === activeFilter);
+
+            // Sort: downloading first, then by percent descending, complete last
+            const statusOrder = { downloading: 0, queued: 1, complete: 2 };
+            filtered.sort((a, b) => {
+                const sa = statusOrder[a.status] !== undefined ? statusOrder[a.status] : 1;
+                const sb = statusOrder[b.status] !== undefined ? statusOrder[b.status] : 1;
+                if (sa !== sb) return sa - sb;
+                return b.percent - a.percent;
+            });
+
+            if (filtered.length === 0) {
+                grid.innerHTML = '<div style="grid-column:1/-1; text-align:center; padding:2rem; color:var(--text-muted);">No collections to display</div>';
+                return;
+            }
+
+            for (const col of filtered) {
+                const card = document.createElement('div');
+                const isComplete = col.status === 'complete';
+                const sClass = col.serverColor.replace('server', 's');
+                card.className = 'col-card ' + sClass + (isComplete ? ' complete' : '');
+
+                const statusIcon = isComplete ? '&#10003;' : col.status === 'downloading' ? '&#9660;' : '&#9675;';
+                const statusClass = isComplete ? 'complete' : col.status === 'downloading' ? 'downloading' : 'queued';
+                const statusLabel = isComplete ? 'Complete' : col.status === 'downloading' ? 'Downloading' : 'Queued';
+
+                const sizeStr = col.targetTib > 0 ? col.targetTib.toFixed(2) + ' TiB' : col.downloadedHuman;
+                const barClass = isComplete ? 'complete' : sClass;
+
+                let detailStr = '';
+                if (col.speed !== '--' && col.status === 'downloading') {
+                    detailStr = col.speed + (col.eta !== '--' ? ' &middot; ETA: ' + col.eta : '');
+                }
+
+                card.innerHTML =
+                    '<div class="col-card-header">' +
+                    '<div class="col-name">' + escapeHtml(col.name) + '</div>' +
+                    '<span class="col-badge ' + sClass + '">' + SERVER_META[col.server].name.replace('Archive ', 'A') + '</span>' +
+                    '</div>' +
+                    '<div class="col-progress-bar">' +
+                    '<div class="col-progress-fill ' + barClass + '" style="width:' + Math.min(col.percent, 100) + '%"></div>' +
+                    '</div>' +
+                    '<div class="col-stats">' +
+                    '<span>' + sizeStr + '</span>' +
+                    '<span class="col-status ' + statusClass + '">' + statusIcon + ' ' + statusLabel +
+                    (col.percent > 0 && !isComplete ? ' (' + col.percent.toFixed(1) + '%)' : '') +
+                    '</span>' +
+                    '</div>' +
+                    (detailStr ? '<div class="col-detail">' + detailStr + '</div>' : '');
+
+                grid.appendChild(card);
+            }
+        }
+
+        function escapeHtml(s) {
+            const d = document.createElement('div');
+            d.textContent = s;
+            return d.innerHTML;
+        }
+
+        // ── Vault (Completed Items) ──
+
+        // Map a collection name + server to manifest entries
+        function lookupManifest(colName, serverKey) {
+            var m = manifests[serverKey];
+            if (!m || !m.collections) return null;
+
+            // Direct match: "TOSEC" -> manifest.collections["TOSEC"]
+            if (m.collections[colName]) return m.collections[colName];
+
+            // Redump mapping: "Redump - Sony - PlayStation" -> manifest.collections["Redump/Sony - PlayStation"]
+            if (colName.startsWith('Redump - ')) {
+                var redumpKey = 'Redump/' + colName.substring(9);
+                if (m.collections[redumpKey]) return m.collections[redumpKey];
+            }
+
+            // No-Intro grouped: "No-Intro - Nintendo (all subcollections)" -> aggregate all "No-Intro/Nintendo -*"
+            if (colName.indexOf('No-Intro - ') === 0) {
+                var groupMatch = colName.match(/No-Intro - (\w+)/);
+                if (groupMatch) {
+                    var prefix = 'No-Intro/' + groupMatch[1] + ' -';
+                    var merged = { total_size: 0, entries: [] };
+                    for (var key in m.collections) {
+                        if (key.indexOf(prefix) === 0 || key === 'No-Intro/' + groupMatch[1]) {
+                            var sub = m.collections[key];
+                            var shortName = key.replace('No-Intro/', '');
+                            merged.total_size += sub.total_size || 0;
+                            // Add the subcollection itself as an entry
+                            merged.entries.push({ name: shortName, size: sub.total_size || 0 });
+                        }
+                    }
+                    if (merged.entries.length > 0) {
+                        merged.entries.sort(function (a, b) { return b.size - a.size; });
+                        return merged;
+                    }
+                }
+            }
+
+            // No-Intro Classic: aggregate everything except Nintendo/Sony
+            if (colName.indexOf('Classic Retro') !== -1) {
+                var classicMerged = { total_size: 0, entries: [] };
+                for (var cKey in m.collections) {
+                    if (cKey.indexOf('No-Intro/') === 0 &&
+                        cKey.indexOf('No-Intro/Nintendo') !== 0 &&
+                        cKey.indexOf('No-Intro/Sony') !== 0) {
+                        var cSub = m.collections[cKey];
+                        classicMerged.total_size += cSub.total_size || 0;
+                        classicMerged.entries.push({
+                            name: cKey.replace('No-Intro/', ''),
+                            size: cSub.total_size || 0
+                        });
+                    }
+                }
+                if (classicMerged.entries.length > 0) {
+                    classicMerged.entries.sort(function (a, b) { return b.size - a.size; });
+                    return classicMerged;
+                }
+            }
+
+            return null;
+        }
+
+        function renderVault() {
+            var items = [];
+
+            // Collect ALL items from live status data
+            for (var serverKey in SERVER_META) {
+                var d = serverData[serverKey];
+                if (!d || !d.collections) continue;
+                var meta = SERVER_META[serverKey];
+                for (var i = 0; i < d.collections.length; i++) {
+                    var col = d.collections[i];
+                    items.push({
+                        name: col.name,
+                        server: serverKey,
+                        serverColor: meta.color,
+                        bytes: col.downloaded_bytes || 0,
+                        human: col.downloaded_human || '--',
+                        targetTib: col.target_tib || 0,
+                        percent: col.percent || 0,
+                        status: col.status || 'downloading',
+                        speed: col.speed || '--',
+                        eta: col.eta || '--'
+                    });
+                }
+            }
+
+            // Add any from assignments not already in live data
+            if (assignments && assignments.servers) {
+                var seenNames = {};
+                for (var j = 0; j < items.length; j++) seenNames[items[j].name] = true;
+                for (var sKey in assignments.servers) {
+                    var srv = assignments.servers[sKey];
+                    var sMeta = SERVER_META[sKey];
+                    if (!srv || !srv.collections || !sMeta) continue;
+                    for (var k = 0; k < srv.collections.length; k++) {
+                        var ac = srv.collections[k];
+                        if (!seenNames[ac.name]) {
+                            items.push({
+                                name: ac.name,
+                                server: sKey,
+                                serverColor: sMeta.color,
+                                bytes: 0,
+                                human: '--',
+                                targetTib: ac.size_tib || 0,
+                                percent: 0,
+                                status: ac.status || 'queued',
+                                speed: '--',
+                                eta: '--'
+                            });
+                        }
+                    }
+                }
+            }
+
+            // Sort: complete first (by size desc), then downloading (by percent desc), then queued
+            var statusOrder = { complete: 0, downloading: 1, queued: 2 };
+            items.sort(function (a, b) {
+                var sa = statusOrder[a.status] !== undefined ? statusOrder[a.status] : 1;
+                var sb = statusOrder[b.status] !== undefined ? statusOrder[b.status] : 1;
+                if (sa !== sb) return sa - sb;
+                if (sa === 0) {
+                    var sza = a.bytes || (a.targetTib * 1024 * 1024 * 1024 * 1024);
+                    var szb = b.bytes || (b.targetTib * 1024 * 1024 * 1024 * 1024);
+                    return szb - sza;
+                }
+                return b.percent - a.percent;
+            });
+
+            var completeCount = items.filter(function (x) { return x.status === 'complete'; }).length;
+            document.getElementById('vault-count').textContent = items.length;
+            var body = document.getElementById('vault-body');
+
+            if (items.length === 0) {
+                body.innerHTML = '<div class="vault-empty">No collections yet</div>';
+                return;
+            }
+
+            var totalBytes = 0;
+            var rows = '';
+            for (var n = 0; n < items.length; n++) {
+                var c = items[n];
+                var sClass = c.serverColor.replace('server', 's');
+                var sizeDisplay = c.bytes > 0 ? formatBytes(c.bytes) : (c.targetTib > 0 ? c.targetTib.toFixed(2) + ' TiB' : '--');
+                totalBytes += c.bytes > 0 ? c.bytes : 0;
+
+                var manifest = lookupManifest(c.name, c.server);
+                var hasContent = manifest && manifest.entries && manifest.entries.length > 0;
+                var entryCount = hasContent ? manifest.entries.length : 0;
+
+                var isComplete = c.status === 'complete';
+                var statusIcon = isComplete ? '&#10003;' : c.status === 'downloading' ? '&#9660;' : '&#9675;';
+                var statusClass = isComplete ? 'complete' : c.status === 'downloading' ? 'downloading' : 'queued';
+                var pctDisplay = isComplete ? '100%' : c.percent > 0 ? c.percent.toFixed(1) + '%' : '0%';
+
+                rows +=
+                    '<tr class="vault-row" data-idx="' + n + '">' +
+                    '<td><div class="vault-name-cell">' +
+                    (hasContent ? '<span class="vault-expand" data-idx="' + n + '">&#9654;</span>' : '<span style="width:16px;display:inline-block"></span>') +
+                    '<span class="vault-status-icon ' + statusClass + '">' + statusIcon + '</span>' +
+                    '<span class="vault-col-name">' + escapeHtml(c.name) + '</span>' +
+                    (entryCount > 0 ? ' <span style="color:var(--text-muted);font-size:0.6875rem">(' + entryCount + ' items)</span>' : '') +
+                    '</div></td>' +
+                    '<td><span class="vault-server-badge ' + sClass + '">' + SERVER_META[c.server].name + '</span></td>' +
+                    '<td class="vault-size">' + sizeDisplay + '</td>' +
+                    '<td><div class="vault-progress">' +
+                    '<div class="vault-progress-bar"><div class="vault-progress-fill ' + statusClass + '" style="width:' + Math.min(isComplete ? 100 : c.percent, 100) + '%"></div></div>' +
+                    '<span class="vault-pct ' + statusClass + '">' + pctDisplay + '</span>' +
+                    '</div></td>' +
+                    '</tr>' +
+                    '<tr class="vault-contents-row" id="vault-contents-' + n + '" style="display:none">' +
+                    '<td colspan="4" class="vault-contents-cell">' +
+                    renderVaultTree(manifest) +
+                    '</td>' +
+                    '</tr>';
+            }
+
+            body.innerHTML =
+                '<table class="vault-table">' +
+                '<thead><tr><th>Collection</th><th>Server</th><th>Downloaded</th><th>Progress</th></tr></thead>' +
+                '<tbody>' + rows +
+                '<tr class="vault-total-row"><td>Total on Disk (' + completeCount + ' complete, ' + (items.length - completeCount) + ' in progress)</td><td></td><td>' + formatBytes(totalBytes) + '</td><td></td></tr>' +
+                '</tbody>' +
+                '</table>';
+        }
+
+        function renderVaultTree(manifest) {
+            if (!manifest || !manifest.entries || manifest.entries.length === 0) {
+                return '<div class="vault-tree"><div class="vault-tree-empty">Manifest data not yet available -- will populate on next workflow run</div></div>';
+            }
+
+            var entries = manifest.entries;
+            var maxSize = entries.length > 0 ? entries[0].size : 1;
+
+            var html = '<div class="vault-tree">';
+            for (var i = 0; i < entries.length; i++) {
+                var e = entries[i];
+                var barPct = maxSize > 0 ? Math.max((e.size / maxSize) * 100, 1) : 0;
+                html +=
+                    '<div class="vault-entry">' +
+                    '<span class="vault-entry-icon">&#128193;</span>' +
+                    '<span class="vault-entry-name" title="' + escapeHtml(e.name) + '">' + escapeHtml(e.name) + '</span>' +
+                    '<span class="vault-entry-bar"><span class="vault-entry-bar-fill" style="width:' + barPct.toFixed(1) + '%"></span></span>' +
+                    '<span class="vault-entry-size">' + formatBytes(e.size) + '</span>' +
+                    '</div>';
+            }
+            html += '</div>';
+            return html;
+        }
+
+        // Vault toggle (open/close panel)
+        document.getElementById('vault-toggle').addEventListener('click', function () {
+            this.classList.toggle('open');
+            document.getElementById('vault-body').classList.toggle('open');
+        });
+
+        // Vault row expand/collapse (delegated)
+        document.getElementById('vault-body').addEventListener('click', function (e) {
+            var row = e.target.closest('.vault-row');
+            if (!row) return;
+            var idx = row.getAttribute('data-idx');
+            if (idx === null) return;
+
+            var contentsRow = document.getElementById('vault-contents-' + idx);
+            var chevron = row.querySelector('.vault-expand');
+            if (!contentsRow) return;
+
+            var isOpen = contentsRow.style.display !== 'none';
+            contentsRow.style.display = isOpen ? 'none' : 'table-row';
+            if (chevron) chevron.classList.toggle('open', !isOpen);
+        });
+
+        // ── Filter Buttons ──
+        document.getElementById('filter-bar').addEventListener('click', function (e) {
+            const btn = e.target.closest('.filter-btn');
+            if (!btn) return;
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            activeFilter = btn.dataset.filter;
+            renderCollections();
+        });
+
+        // ── Init ──
+        document.addEventListener('DOMContentLoaded', function () {
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+            loadData();
+            setInterval(loadData, 5 * 60 * 1000);
+        });
+    </script>
+</body>
+
+</html>

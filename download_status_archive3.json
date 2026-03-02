@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-03-02T10:25:07Z",
+  "server": "archive3",
+  "disk_total": "44T",
+  "disk_used": "2.2T",
+  "disk_used_bytes": 2356395171840,
+  "disk_percent": 5.0,
+  "collections": [
+    {
+      "name": "No-Intro - Nintendo (all subcollections)",
+      "downloaded_bytes": 741058744723,
+      "downloaded_human": "690.16 GiB",
+      "target_tib": 18.04,
+      "percent": 3.74,
+      "speed": "6.838 MiB/s",
+      "eta": "2d19h50m",
+      "status": "downloading"
+    },
+    {
+      "name": "No-Intro - Sony (all subcollections)",
+      "downloaded_bytes": 408127488128,
+      "downloaded_human": "380.10 GiB",
+      "target_tib": 24.78,
+      "percent": 1.5,
+      "speed": "6.808 MiB/s",
+      "eta": "1w2d10h",
+      "status": "downloading"
+    },
+    {
+      "name": "No-Intro - Classic Retro (30+ manufacturers)",
+      "downloaded_bytes": 50383568955,
+      "downloaded_human": "46.92 GiB",
+      "target_tib": 0.05,
+      "percent": 91.65,
+      "speed": "1.457 MiB/s",
+      "eta": "0s",
+      "status": "downloading"
+    }
+  ]
+}
