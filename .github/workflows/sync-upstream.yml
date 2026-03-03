@@ -1,0 +1,43 @@
+name: Sync Upstream Data
+
+on:
+  schedule:
+    - cron: '0 * * * *' # Run every hour
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Configure Git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Download latest data files
+        run: |
+          curl -sO https://raw.githubusercontent.com/kawaii-not-kawaii/myrient-archieve/main/download_status.json
+          curl -sO https://raw.githubusercontent.com/kawaii-not-kawaii/myrient-archieve/main/download_status_archive2.json
+          curl -sO https://raw.githubusercontent.com/kawaii-not-kawaii/myrient-archieve/main/download_status_archive3.json
+          curl -sO https://raw.githubusercontent.com/kawaii-not-kawaii/myrient-archieve/main/server_assignments.json
+          curl -sO https://raw.githubusercontent.com/kawaii-not-kawaii/myrient-archieve/main/manifests/archive1.json --create-dirs -o manifests/archive1.json
+          curl -sO https://raw.githubusercontent.com/kawaii-not-kawaii/myrient-archieve/main/manifests/archive2.json --create-dirs -o manifests/archive2.json
+          curl -sO https://raw.githubusercontent.com/kawaii-not-kawaii/myrient-archieve/main/manifests/archive3.json --create-dirs -o manifests/archive3.json
+
+      - name: Commit and Push
+        run: |
+          git add -A
+          # Check if there are changes before trying to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Auto-sync upstream JSON data updates"
+            git push origin main
+          fi
