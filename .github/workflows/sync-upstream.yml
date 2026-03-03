@@ -28,15 +28,15 @@ jobs:
       - name: Fetch upstream
         run: git fetch upstream
 
-      - name: Merge upstream changes
+      - name: Sync upstream data
         run: |
-          git merge upstream/main --strategy-option ours --allow-unrelated-histories -m "Merge upstream updates" || true
+          # Explicitly pull ONLY the data updates to avoid touching workflows and HTML files
+          git checkout upstream/main -- '*.json' '*.csv' 'manifests/' || true
           
-          # Delete their workflow file if it snuck in, and rewrite the most recent commit
-          if [ -f .github/workflows/update-progress.yml ]; then
-            git rm -rf .github/workflows/update-progress.yml
-            git commit --amend --no-edit
-          fi
+          # Check for changes and commit
+          git status
+          git add -A
+          git commit -m "Auto-sync upstream data updates" || true
 
       - name: Push changes
         run: git push origin main
