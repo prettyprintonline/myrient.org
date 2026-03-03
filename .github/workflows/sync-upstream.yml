@@ -30,10 +30,13 @@ jobs:
 
       - name: Merge upstream changes
         run: |
-          git merge upstream/main --no-commit --strategy-option ours --allow-unrelated-histories || true
-          # Remove their workflow to prevent permission issues
-          git rm -rf .github/workflows/update-progress.yml || true
-          git commit -m "Merge upstream updates" || true
+          git merge upstream/main --strategy-option ours --allow-unrelated-histories -m "Merge upstream updates" || true
+          
+          # Delete their workflow file if it snuck in, and rewrite the most recent commit
+          if [ -f .github/workflows/update-progress.yml ]; then
+            git rm -rf .github/workflows/update-progress.yml
+            git commit --amend --no-edit
+          fi
 
       - name: Push changes
         run: git push origin main
