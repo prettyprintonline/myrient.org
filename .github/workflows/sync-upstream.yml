@@ -1,4 +1,4 @@
-name: Sync Upstream
+name: Sync Upstream Data
 
 on:
   schedule:
@@ -14,29 +14,30 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
-          ref: main
+          fetch-depth: 1
 
       - name: Configure Git
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
-      - name: Add upstream remote
-        run: git remote add upstream https://github.com/kawaii-not-kawaii/myrient-archieve.git
-
-      - name: Fetch upstream
-        run: git fetch upstream
-
-      - name: Sync upstream data
+      - name: Download latest data files
         run: |
-          # Explicitly pull ONLY the data updates to avoid touching workflows and HTML files
-          git checkout upstream/main -- '*.json' '*.csv' 'manifests/' || true
-          
-          # Check for changes and commit
-          git status
-          git add -A
-          git commit -m "Auto-sync upstream data updates" || true
+          curl -sO https://raw.githubusercontent.com/kawaii-not-kawaii/myrient-archieve/main/download_status.json
+          curl -sO https://raw.githubusercontent.com/kawaii-not-kawaii/myrient-archieve/main/download_status_archive2.json
+          curl -sO https://raw.githubusercontent.com/kawaii-not-kawaii/myrient-archieve/main/download_status_archive3.json
+          curl -sO https://raw.githubusercontent.com/kawaii-not-kawaii/myrient-archieve/main/server_assignments.json
+          curl -sO https://raw.githubusercontent.com/kawaii-not-kawaii/myrient-archieve/main/manifests/archive1.json --create-dirs -o manifests/archive1.json
+          curl -sO https://raw.githubusercontent.com/kawaii-not-kawaii/myrient-archieve/main/manifests/archive2.json --create-dirs -o manifests/archive2.json
+          curl -sO https://raw.githubusercontent.com/kawaii-not-kawaii/myrient-archieve/main/manifests/archive3.json --create-dirs -o manifests/archive3.json
 
-      - name: Push changes
-        run: git push origin main
+      - name: Commit and Push
+        run: |
+          git add -A
+          # Check if there are changes before trying to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Auto-sync upstream JSON data updates"
+            git push origin main
+          fi
