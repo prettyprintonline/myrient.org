@@ -1,39 +1,39 @@
 {
-  "timestamp": "2026-03-04T04:40:26Z",
+  "timestamp": "2026-03-04T07:23:43Z",
   "server": "archive1",
   "disk_total": "44T",
-  "disk_used": "16T",
-  "disk_used_bytes": 17525193502720,
-  "disk_percent": 39.0,
+  "disk_used": "17T",
+  "disk_used_bytes": 17852576444416,
+  "disk_percent": 40.0,
   "collections": [
     {
       "name": "Internet Archive",
-      "downloaded_bytes": 12318921143349,
-      "downloaded_human": "11.20 TiB",
+      "downloaded_bytes": 12633983079337,
+      "downloaded_human": "11.49 TiB",
       "target_tib": 40.48,
-      "percent": 27.68,
-      "speed": "19.558 MiB/s",
-      "eta": "1w1d21h7m26s",
+      "percent": 28.39,
+      "speed": "43.949 MiB/s",
+      "eta": "3d21h14m58s",
       "status": "downloading"
     },
     {
       "name": "No-Intro - Microsoft Xbox 360 (Digital)",
-      "downloaded_bytes": 893459145728,
-      "downloaded_human": "832.10 GiB",
+      "downloaded_bytes": 906564583214,
+      "downloaded_human": "844.30 GiB",
       "target_tib": 1.19,
-      "percent": 68.29,
-      "speed": "1015.576 KiB/s",
-      "eta": "4d22h25m3s",
+      "percent": 69.29,
+      "speed": "1.224 MiB/s",
+      "eta": "3d21h8m24s",
       "status": "downloading"
     },
     {
       "name": "No-Intro - Source Code - Various",
-      "downloaded_bytes": 305756002172,
-      "downloaded_human": "284.76 GiB",
+      "downloaded_bytes": 308948916092,
+      "downloaded_human": "287.73 GiB",
       "target_tib": 1.0,
-      "percent": 27.81,
-      "speed": "398.167 KiB/s",
-      "eta": "3w22h23m43s",
+      "percent": 28.1,
+      "speed": "215.698 KiB/s",
+      "eta": "5w5d7h40m54s",
       "status": "downloading"
     }
   ]
