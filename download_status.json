@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-03-05T15:26:09Z",
+  "timestamp": "2026-03-05T19:34:58Z",
   "server": "archive1",
   "disk_total": "44T",
-  "disk_used": "20T",
-  "disk_used_bytes": 21839503806464,
-  "disk_percent": 49.0,
+  "disk_used": "22T",
+  "disk_used_bytes": 23397755273216,
+  "disk_percent": 53.0,
   "collections": [
     {
       "name": "Internet Archive",
-      "downloaded_bytes": 18036375634202,
-      "downloaded_human": "16.40 TiB",
+      "downloaded_bytes": 19584103374636,
+      "downloaded_human": "17.81 TiB",
       "target_tib": 40.48,
-      "percent": 40.52,
-      "speed": "99.540 MiB/s",
-      "eta": "1d7h29m26s",
+      "percent": 44.0,
+      "speed": "99.081 MiB/s",
+      "eta": "1d4h4m11s",
       "status": "downloading"
     },
     {
@@ -28,12 +28,12 @@
     },
     {
       "name": "No-Intro - Source Code - Various",
-      "downloaded_bytes": 345933240188,
-      "downloaded_human": "322.18 GiB",
+      "downloaded_bytes": 349472184188,
+      "downloaded_human": "325.47 GiB",
       "target_tib": 1.0,
-      "percent": 31.46,
-      "speed": "367.228 KiB/s",
-      "eta": "3w1d13h4m2s",
+      "percent": 31.78,
+      "speed": "257.911 KiB/s",
+      "eta": "4w3d22h40m4",
       "status": "downloading"
     }
   ]
