@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-03-06T17:20:32Z",
+  "timestamp": "2026-03-06T19:21:25Z",
   "server": "archive2",
   "disk_total": "57T",
   "disk_used": "41T",
-  "disk_used_bytes": 44091322109952,
+  "disk_used_bytes": 44362549559296,
   "disk_percent": 75.0,
   "collections": [
     {
       "name": "Eggman's Arcade Repository",
-      "downloaded_bytes": 1090502043097,
-      "downloaded_human": "1015.61 GiB",
+      "downloaded_bytes": 1198559494208,
+      "downloaded_human": "1.09 TiB",
       "target_tib": 2.79,
-      "percent": 35.55,
-      "speed": "16.478 MiB/s",
-      "eta": "1d5h30m16s",
+      "percent": 39.07,
+      "speed": "12.993 MiB/s",
+      "eta": "1d10h16m19s",
       "status": "downloading"
     },
     {
@@ -48,12 +48,12 @@
     },
     {
       "name": "Laserdisc Collection",
-      "downloaded_bytes": 1469399120818,
-      "downloaded_human": "1.34 TiB",
+      "downloaded_bytes": 1595079349566,
+      "downloaded_human": "1.45 TiB",
       "target_tib": 4.37,
-      "percent": 30.58,
-      "speed": "20.353 MiB/s",
-      "eta": "1d22h9m57s",
+      "percent": 33.2,
+      "speed": "14.239 MiB/s",
+      "eta": "2d15h39m40s",
       "status": "downloading"
     },
     {
@@ -68,12 +68,12 @@
     },
     {
       "name": "MAME",
-      "downloaded_bytes": 1015063816995,
-      "downloaded_human": "945.35 GiB",
+      "downloaded_bytes": 1015886682883,
+      "downloaded_human": "946.12 GiB",
       "target_tib": 5.96,
-      "percent": 15.49,
-      "speed": "7.153 KiB/s",
-      "eta": "13w5d15h2m28s",
+      "percent": 15.5,
+      "speed": "0 B/s",
+      "eta": "122",
       "status": "downloading"
     },
     {
@@ -98,22 +98,22 @@
     },
     {
       "name": "Redump - Nintendo - Wii U - WUX",
-      "downloaded_bytes": 4232811678750,
-      "downloaded_human": "3.85 TiB",
+      "downloaded_bytes": 4127609631229,
+      "downloaded_human": "3.75 TiB",
       "target_tib": 3.9,
-      "percent": 98.71,
-      "speed": "17.331 MiB/s",
-      "eta": "20h1m32s",
+      "percent": 96.26,
+      "speed": "13.978 MiB/s",
+      "eta": "22h46m30s",
       "status": "downloading"
     },
     {
       "name": "Redump - Sega - Dreamcast",
-      "downloaded_bytes": 825909913634,
-      "downloaded_human": "769.19 GiB",
+      "downloaded_bytes": 830053127119,
+      "downloaded_human": "773.05 GiB",
       "target_tib": 0.75,
       "percent": 100,
       "speed": "331.285 KiB/s",
-      "eta": "0s",
+      "eta": "3w3d21h47m41s",
       "status": "downloading"
     },
     {
@@ -123,27 +123,27 @@
       "target_tib": 0.77,
       "percent": 89.86,
       "speed": "331.285 KiB/s",
-      "eta": "0s",
+      "eta": "3w3d21h47m41s",
       "status": "downloading"
     },
     {
       "name": "Redump - Sony - PlayStation",
-      "downloaded_bytes": 2238616449422,
-      "downloaded_human": "2.04 TiB",
+      "downloaded_bytes": 2318920552349,
+      "downloaded_human": "2.11 TiB",
       "target_tib": 2.99,
-      "percent": 68.09,
-      "speed": "15.807 MiB/s",
-      "eta": "23h17m36s",
+      "percent": 70.54,
+      "speed": "14.461 MiB/s",
+      "eta": "23h30m37s",
       "status": "downloading"
     },
     {
       "name": "RetroAchievements",
-      "downloaded_bytes": 2751344172848,
-      "downloaded_human": "2.50 TiB",
+      "downloaded_bytes": 2795868740799,
+      "downloaded_human": "2.54 TiB",
       "target_tib": 2.84,
-      "percent": 88.11,
-      "speed": "18.970 MiB/s",
-      "eta": "18h38m1s",
+      "percent": 89.54,
+      "speed": "13.211 MiB/s",
+      "eta": "1d20m17s",
       "status": "downloading"
     },
     {
@@ -168,12 +168,12 @@
     },
     {
       "name": "TOSEC-ISO",
-      "downloaded_bytes": 3024881643193,
-      "downloaded_human": "2.75 TiB",
+      "downloaded_bytes": 3099354158479,
+      "downloaded_human": "2.82 TiB",
       "target_tib": 6.05,
-      "percent": 45.47,
-      "speed": "17.340 MiB/s",
-      "eta": "3d5h46m41s",
+      "percent": 46.59,
+      "speed": "13.809 MiB/s",
+      "eta": "3d23h37m53s",
       "status": "downloading"
     },
     {
@@ -208,12 +208,12 @@
     },
     {
       "name": "bitsavers",
-      "downloaded_bytes": 1055755391218,
-      "downloaded_human": "983.25 GiB",
+      "downloaded_bytes": 1078458201063,
+      "downloaded_human": "1004.39 GiB",
       "target_tib": 1.64,
-      "percent": 58.55,
-      "speed": "1.350 MiB/s",
-      "eta": "17h1m4s",
+      "percent": 59.81,
+      "speed": "13.338 MiB/s",
+      "eta": "3h43s",
       "status": "downloading"
     },
     {
