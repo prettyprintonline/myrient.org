@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-03-07T22:11:13Z",
+  "timestamp": "2026-03-07T23:11:45Z",
   "server": "archive2",
   "disk_total": "57T",
   "disk_used": "46T",
-  "disk_used_bytes": 49665980866560,
+  "disk_used_bytes": 49888566575104,
   "disk_percent": 84.0,
   "collections": [
     {
       "name": "Eggman's Arcade Repository",
-      "downloaded_bytes": 2646220793647,
-      "downloaded_human": "2.41 TiB",
+      "downloaded_bytes": 2720554018794,
+      "downloaded_human": "2.47 TiB",
       "target_tib": 2.79,
-      "percent": 86.26,
+      "percent": 88.69,
       "speed": "287.303 KiB/s",
-      "eta": "16w3h8m28s",
+      "eta": "15w4d4h48m37s",
       "status": "downloading"
     },
     {
@@ -48,12 +48,12 @@
     },
     {
       "name": "Laserdisc Collection",
-      "downloaded_bytes": 3038390131865,
-      "downloaded_human": "2.76 TiB",
+      "downloaded_bytes": 3114898896842,
+      "downloaded_human": "2.83 TiB",
       "target_tib": 4.37,
-      "percent": 63.24,
-      "speed": "18.074 MiB/s",
-      "eta": "1d3h35m22s",
+      "percent": 64.83,
+      "speed": "21.316 MiB/s",
+      "eta": "22h26m24s",
       "status": "downloading"
     },
     {
@@ -68,12 +68,12 @@
     },
     {
       "name": "MAME",
-      "downloaded_bytes": 1071382649316,
-      "downloaded_human": "997.80 GiB",
+      "downloaded_bytes": 1073604809698,
+      "downloaded_human": "999.87 GiB",
       "target_tib": 5.96,
-      "percent": 16.35,
-      "speed": "1.703 KiB/s",
-      "eta": "1",
+      "percent": 16.38,
+      "speed": "240.151 KiB/s",
+      "eta": "3d18h7m51s",
       "status": "downloading"
     },
     {
@@ -92,8 +92,8 @@
       "downloaded_human": "190.52 GiB",
       "target_tib": 0.19,
       "percent": 97.93,
-      "speed": "18.632 MiB/s",
-      "eta": "7h16m17s",
+      "speed": "21.704 MiB/s",
+      "eta": "5h13m42s",
       "status": "downloading"
     },
     {
@@ -122,8 +122,8 @@
       "downloaded_human": "46.97 GiB",
       "target_tib": 0.05,
       "percent": 91.74,
-      "speed": "18.632 MiB/s",
-      "eta": "7h16m17s",
+      "speed": "21.704 MiB/s",
+      "eta": "5h13m42s",
       "status": "downloading"
     },
     {
@@ -132,8 +132,8 @@
       "downloaded_human": "774.08 GiB",
       "target_tib": 0.75,
       "percent": 100,
-      "speed": "18.632 MiB/s",
-      "eta": "7h16m17s",
+      "speed": "21.704 MiB/s",
+      "eta": "5h13m42s",
       "status": "downloading"
     },
     {
@@ -142,28 +142,28 @@
       "downloaded_human": "177.93 GiB",
       "target_tib": 0.17,
       "percent": 100,
-      "speed": "18.632 MiB/s",
-      "eta": "7h16m17s",
+      "speed": "21.704 MiB/s",
+      "eta": "5h13m42s",
       "status": "downloading"
     },
     {
       "name": "Redump - Sega - Saturn",
-      "downloaded_bytes": 825188035296,
-      "downloaded_human": "768.52 GiB",
+      "downloaded_bytes": 825945707150,
+      "downloaded_human": "769.22 GiB",
       "target_tib": 0.77,
-      "percent": 97.47,
-      "speed": "18.632 MiB/s",
-      "eta": "7h16m17s",
+      "percent": 97.56,
+      "speed": "21.704 MiB/s",
+      "eta": "5h13m42s",
       "status": "downloading"
     },
     {
       "name": "Redump - Sony - PlayStation",
-      "downloaded_bytes": 3284945545498,
+      "downloaded_bytes": 3284371183276,
       "downloaded_human": "2.99 TiB",
       "target_tib": 2.99,
-      "percent": 99.92,
+      "percent": 99.9,
       "speed": "422.249 KiB/s",
-      "eta": "11w3d11h36m24",
+      "eta": "11w4d1h1m4s",
       "status": "downloading"
     },
     {
@@ -198,12 +198,12 @@
     },
     {
       "name": "TOSEC-ISO",
-      "downloaded_bytes": 4514305522099,
-      "downloaded_human": "4.11 TiB",
+      "downloaded_bytes": 4592991822402,
+      "downloaded_human": "4.18 TiB",
       "target_tib": 6.05,
-      "percent": 67.86,
-      "speed": "19.751 MiB/s",
-      "eta": "1d22h5m49s",
+      "percent": 69.05,
+      "speed": "23.294 MiB/s",
+      "eta": "1d14h8m5s",
       "status": "downloading"
     },
     {
@@ -238,12 +238,12 @@
     },
     {
       "name": "bitsavers",
-      "downloaded_bytes": 1688265282072,
-      "downloaded_human": "1.54 TiB",
+      "downloaded_bytes": 1701588110618,
+      "downloaded_human": "1.55 TiB",
       "target_tib": 1.64,
-      "percent": 93.63,
-      "speed": "14.456 MiB/s",
-      "eta": "1h13m10s",
+      "percent": 94.36,
+      "speed": "194.527 KiB/s",
+      "eta": "3d10h34m3s",
       "status": "downloading"
     },
     {
