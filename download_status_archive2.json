@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-03-07T08:14:43Z",
+  "timestamp": "2026-03-07T09:14:48Z",
   "server": "archive2",
   "disk_total": "57T",
   "disk_used": "43T",
-  "disk_used_bytes": 46345851535360,
-  "disk_percent": 78.0,
+  "disk_used_bytes": 46419884097536,
+  "disk_percent": 79.0,
   "collections": [
     {
       "name": "Eggman's Arcade Repository",
-      "downloaded_bytes": 1820067948162,
-      "downloaded_human": "1.66 TiB",
+      "downloaded_bytes": 1870330452224,
+      "downloaded_human": "1.70 TiB",
       "target_tib": 2.79,
-      "percent": 59.33,
+      "percent": 60.97,
       "speed": "287.303 KiB/s",
-      "eta": "21w2d19h37m56",
+      "eta": "21w20h4m31s",
       "status": "downloading"
     },
     {
@@ -48,12 +48,12 @@
     },
     {
       "name": "Laserdisc Collection",
-      "downloaded_bytes": 2258123344729,
-      "downloaded_human": "2.05 TiB",
+      "downloaded_bytes": 2311031343961,
+      "downloaded_human": "2.10 TiB",
       "target_tib": 4.37,
-      "percent": 47.0,
-      "speed": "13.570 MiB/s",
-      "eta": "2d5h35m37s",
+      "percent": 48.1,
+      "speed": "13.090 MiB/s",
+      "eta": "2d6h29m8s",
       "status": "downloading"
     },
     {
@@ -68,12 +68,12 @@
     },
     {
       "name": "MAME",
-      "downloaded_bytes": 1023120038510,
-      "downloaded_human": "952.85 GiB",
+      "downloaded_bytes": 1023134064320,
+      "downloaded_human": "952.87 GiB",
       "target_tib": 5.96,
       "percent": 15.61,
-      "speed": "3.013 KiB/s",
-      "eta": "1",
+      "speed": "775 B/s",
+      "eta": "4",
       "status": "downloading"
     },
     {
@@ -84,6 +84,16 @@
       "percent": 25.93,
       "speed": "52.390 KiB/s",
       "eta": "0s",
+      "status": "downloading"
+    },
+    {
+      "name": "Redump - NEC - PC Engine CD & TurboGrafx CD",
+      "downloaded_bytes": 2699044835,
+      "downloaded_human": "2.51 GiB",
+      "target_tib": 0.19,
+      "percent": 1.29,
+      "speed": "12.771 MiB/s",
+      "eta": "4h10m10s",
       "status": "downloading"
     },
     {
@@ -98,22 +108,22 @@
     },
     {
       "name": "Redump - Nintendo - Wii U - WUX",
-      "downloaded_bytes": 4152376138508,
+      "downloaded_bytes": 4152406514615,
       "downloaded_human": "3.78 TiB",
       "target_tib": 3.9,
-      "percent": 96.83,
-      "speed": "13.264 MiB/s",
-      "eta": "10h29m58s",
+      "percent": 96.84,
+      "speed": "13.593 MiB/s",
+      "eta": "9h13m54s",
       "status": "downloading"
     },
     {
       "name": "Redump - Sega - Dreamcast",
-      "downloaded_bytes": 829869236574,
-      "downloaded_human": "772.88 GiB",
+      "downloaded_bytes": 831160175346,
+      "downloaded_human": "774.08 GiB",
       "target_tib": 0.75,
       "percent": 100,
-      "speed": "331.285 KiB/s",
-      "eta": "1d10h41m36s",
+      "speed": "12.771 MiB/s",
+      "eta": "4h10m10s",
       "status": "downloading"
     },
     {
@@ -122,28 +132,28 @@
       "downloaded_human": "708.53 GiB",
       "target_tib": 0.77,
       "percent": 89.86,
-      "speed": "331.285 KiB/s",
-      "eta": "1d10h41m36s",
+      "speed": "12.771 MiB/s",
+      "eta": "4h10m10s",
       "status": "downloading"
     },
     {
       "name": "Redump - Sony - PlayStation",
-      "downloaded_bytes": 2804807658041,
-      "downloaded_human": "2.55 TiB",
+      "downloaded_bytes": 2844896240442,
+      "downloaded_human": "2.59 TiB",
       "target_tib": 2.99,
-      "percent": 85.32,
-      "speed": "13.977 MiB/s",
-      "eta": "11h57m46s",
+      "percent": 86.54,
+      "speed": "13.620 MiB/s",
+      "eta": "11h16m2s",
       "status": "downloading"
     },
     {
       "name": "RetroAchievements",
-      "downloaded_bytes": 2884868289949,
+      "downloaded_bytes": 2880305019739,
       "downloaded_human": "2.62 TiB",
       "target_tib": 2.84,
-      "percent": 92.39,
-      "speed": "12.654 MiB/s",
-      "eta": "9h35m27s",
+      "percent": 92.24,
+      "speed": "13.160 MiB/s",
+      "eta": "8h10m24s",
       "status": "downloading"
     },
     {
@@ -168,12 +178,12 @@
     },
     {
       "name": "TOSEC-ISO",
-      "downloaded_bytes": 3675736427983,
-      "downloaded_human": "3.34 TiB",
+      "downloaded_bytes": 3728437854111,
+      "downloaded_human": "3.39 TiB",
       "target_tib": 6.05,
-      "percent": 55.26,
-      "speed": "12.791 MiB/s",
-      "eta": "3d17h35m44s",
+      "percent": 56.05,
+      "speed": "14.392 MiB/s",
+      "eta": "3d6h39m19s",
       "status": "downloading"
     },
     {
@@ -208,12 +218,12 @@
     },
     {
       "name": "bitsavers",
-      "downloaded_bytes": 1417234974764,
-      "downloaded_human": "1.29 TiB",
+      "downloaded_bytes": 1454743082115,
+      "downloaded_human": "1.32 TiB",
       "target_tib": 1.64,
-      "percent": 78.6,
-      "speed": "12.588 MiB/s",
-      "eta": "2h1m22s",
+      "percent": 80.68,
+      "speed": "12.888 MiB/s",
+      "eta": "1h18m42s",
       "status": "downloading"
     },
     {
@@ -241,16 +251,6 @@
       "downloaded_bytes": 0,
       "downloaded_human": "0 B",
       "target_tib": 1.48,
-      "percent": 0,
-      "speed": "--",
-      "eta": "--",
-      "status": "queued"
-    },
-    {
-      "name": "Redump - NEC - PC Engine CD & TurboGrafx CD",
-      "downloaded_bytes": 0,
-      "downloaded_human": "0 B",
-      "target_tib": 0.19,
       "percent": 0,
       "speed": "--",
       "eta": "--",
