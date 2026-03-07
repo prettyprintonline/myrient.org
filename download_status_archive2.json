@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-03-07T16:13:03Z",
+  "timestamp": "2026-03-07T17:11:15Z",
   "server": "archive2",
   "disk_total": "57T",
-  "disk_used": "44T",
-  "disk_used_bytes": 48194450731008,
+  "disk_used": "45T",
+  "disk_used_bytes": 48471038423040,
   "disk_percent": 82.0,
   "collections": [
     {
       "name": "Eggman's Arcade Repository",
-      "downloaded_bytes": 2238001225039,
-      "downloaded_human": "2.04 TiB",
+      "downloaded_bytes": 2294324613937,
+      "downloaded_human": "2.09 TiB",
       "target_tib": 2.79,
-      "percent": 72.96,
+      "percent": 74.79,
       "speed": "287.303 KiB/s",
-      "eta": "18w6d1h13m42s",
+      "eta": "18w3d17h30m22",
       "status": "downloading"
     },
     {
@@ -48,12 +48,12 @@
     },
     {
       "name": "Laserdisc Collection",
-      "downloaded_bytes": 2692887175408,
-      "downloaded_human": "2.45 TiB",
+      "downloaded_bytes": 2750429012906,
+      "downloaded_human": "2.50 TiB",
       "target_tib": 4.37,
-      "percent": 56.05,
-      "speed": "18.009 MiB/s",
-      "eta": "1d9h58m50s",
+      "percent": 57.24,
+      "speed": "13.886 MiB/s",
+      "eta": "1d18h58m50s",
       "status": "downloading"
     },
     {
@@ -68,12 +68,12 @@
     },
     {
       "name": "MAME",
-      "downloaded_bytes": 1055222874380,
-      "downloaded_human": "982.75 GiB",
+      "downloaded_bytes": 1060275804047,
+      "downloaded_human": "987.46 GiB",
       "target_tib": 5.96,
-      "percent": 16.1,
-      "speed": "344.086 KiB/s",
-      "eta": "3d1h25m59s",
+      "percent": 16.18,
+      "speed": "44 KiB/s",
+      "eta": "3w1d19m48s",
       "status": "downloading"
     },
     {
@@ -92,8 +92,8 @@
       "downloaded_human": "190.52 GiB",
       "target_tib": 0.19,
       "percent": 97.93,
-      "speed": "16.716 MiB/s",
-      "eta": "18m24s",
+      "speed": "13.865 MiB/s",
+      "eta": "15m48s",
       "status": "downloading"
     },
     {
@@ -108,12 +108,22 @@
     },
     {
       "name": "Redump - Nintendo - Wii U - WUX",
-      "downloaded_bytes": 4200389156494,
-      "downloaded_human": "3.82 TiB",
+      "downloaded_bytes": 4259599155768,
+      "downloaded_human": "3.87 TiB",
       "target_tib": 3.9,
-      "percent": 97.95,
-      "speed": "16.822 MiB/s",
-      "eta": "1h25m25s",
+      "percent": 99.34,
+      "speed": "14.491 MiB/s",
+      "eta": "34m37s",
+      "status": "downloading"
+    },
+    {
+      "name": "Redump - SNK - Neo Geo CD",
+      "downloaded_bytes": 35766874142,
+      "downloaded_human": "33.31 GiB",
+      "target_tib": 0.05,
+      "percent": 65.06,
+      "speed": "13.865 MiB/s",
+      "eta": "15m48s",
       "status": "downloading"
     },
     {
@@ -122,18 +132,18 @@
       "downloaded_human": "774.08 GiB",
       "target_tib": 0.75,
       "percent": 100,
-      "speed": "16.716 MiB/s",
-      "eta": "18m24s",
+      "speed": "13.865 MiB/s",
+      "eta": "15m48s",
       "status": "downloading"
     },
     {
       "name": "Redump - Sega - Mega CD & Sega CD",
-      "downloaded_bytes": 170492794925,
-      "downloaded_human": "158.78 GiB",
+      "downloaded_bytes": 191049155928,
+      "downloaded_human": "177.93 GiB",
       "target_tib": 0.17,
-      "percent": 91.21,
-      "speed": "16.716 MiB/s",
-      "eta": "18m24s",
+      "percent": 100,
+      "speed": "13.865 MiB/s",
+      "eta": "15m48s",
       "status": "downloading"
     },
     {
@@ -142,28 +152,28 @@
       "downloaded_human": "708.53 GiB",
       "target_tib": 0.77,
       "percent": 89.86,
-      "speed": "16.716 MiB/s",
-      "eta": "18m24s",
+      "speed": "13.865 MiB/s",
+      "eta": "15m48s",
       "status": "downloading"
     },
     {
       "name": "Redump - Sony - PlayStation",
-      "downloaded_bytes": 3128024383319,
-      "downloaded_human": "2.84 TiB",
+      "downloaded_bytes": 3172129481247,
+      "downloaded_human": "2.89 TiB",
       "target_tib": 2.99,
-      "percent": 95.15,
-      "speed": "17.803 MiB/s",
-      "eta": "2h56m22s",
+      "percent": 96.49,
+      "speed": "10.648 MiB/s",
+      "eta": "3h28m28s",
       "status": "downloading"
     },
     {
       "name": "RetroAchievements",
-      "downloaded_bytes": 2983795472220,
-      "downloaded_human": "2.71 TiB",
+      "downloaded_bytes": 2996165551458,
+      "downloaded_human": "2.72 TiB",
       "target_tib": 2.84,
-      "percent": 95.55,
+      "percent": 95.95,
       "speed": "285.106 KiB/s",
-      "eta": "9s",
+      "eta": "58m48s",
       "status": "downloading"
     },
     {
@@ -188,12 +198,12 @@
     },
     {
       "name": "TOSEC-ISO",
-      "downloaded_bytes": 4107593462453,
-      "downloaded_human": "3.74 TiB",
+      "downloaded_bytes": 4166325727216,
+      "downloaded_human": "3.79 TiB",
       "target_tib": 6.05,
-      "percent": 61.75,
-      "speed": "16.249 MiB/s",
-      "eta": "2d15h27m12s",
+      "percent": 62.63,
+      "speed": "13.297 MiB/s",
+      "eta": "3d4h22m36s",
       "status": "downloading"
     },
     {
@@ -228,12 +238,12 @@
     },
     {
       "name": "bitsavers",
-      "downloaded_bytes": 1578837565865,
-      "downloaded_human": "1.44 TiB",
+      "downloaded_bytes": 1609597518522,
+      "downloaded_human": "1.46 TiB",
       "target_tib": 1.64,
-      "percent": 87.56,
-      "speed": "7.581 MiB/s",
-      "eta": "1h58m26s",
+      "percent": 89.26,
+      "speed": "14.605 MiB/s",
+      "eta": "44m44s",
       "status": "downloading"
     },
     {
@@ -261,16 +271,6 @@
       "downloaded_bytes": 0,
       "downloaded_human": "0 B",
       "target_tib": 1.48,
-      "percent": 0,
-      "speed": "--",
-      "eta": "--",
-      "status": "queued"
-    },
-    {
-      "name": "Redump - SNK - Neo Geo CD",
-      "downloaded_bytes": 0,
-      "downloaded_human": "0 B",
-      "target_tib": 0.05,
       "percent": 0,
       "speed": "--",
       "eta": "--",
