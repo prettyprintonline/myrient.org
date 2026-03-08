@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-03-08T18:15:28Z",
+  "timestamp": "2026-03-08T20:12:34Z",
   "server": "archive2",
   "disk_total": "57T",
   "disk_used": "51T",
-  "disk_used_bytes": 55279481827328,
-  "disk_percent": 94.0,
+  "disk_used_bytes": 55889588097024,
+  "disk_percent": 95.0,
   "collections": [
     {
       "name": "Eggman's Arcade Repository",
-      "downloaded_bytes": 4389444856794,
-      "downloaded_human": "3.99 TiB",
+      "downloaded_bytes": 4596149742265,
+      "downloaded_human": "4.18 TiB",
       "target_tib": 2.79,
       "percent": 100,
-      "speed": "32.356 MiB/s",
-      "eta": "1d12h58m42s",
+      "speed": "28.862 MiB/s",
+      "eta": "1d15h32m",
       "status": "downloading"
     },
     {
@@ -48,12 +48,12 @@
     },
     {
       "name": "Laserdisc Collection",
-      "downloaded_bytes": 4700299575912,
-      "downloaded_human": "4.27 TiB",
+      "downloaded_bytes": 4161815297233,
+      "downloaded_human": "3.79 TiB",
       "target_tib": 4.37,
-      "percent": 97.82,
-      "speed": "25.528 MiB/s",
-      "eta": "58m43s",
+      "percent": 86.62,
+      "speed": "463.840 KiB/s",
+      "eta": "10w4d21h7m39s",
       "status": "downloading"
     },
     {
@@ -68,12 +68,12 @@
     },
     {
       "name": "MAME",
-      "downloaded_bytes": 1090258855466,
-      "downloaded_human": "1015.38 GiB",
+      "downloaded_bytes": 1093307357971,
+      "downloaded_human": "1018.22 GiB",
       "target_tib": 5.96,
-      "percent": 16.64,
+      "percent": 16.68,
       "speed": "340.520 KiB/s",
-      "eta": "15h29m46s",
+      "eta": "15h52m39s",
       "status": "downloading"
     },
     {
@@ -98,12 +98,12 @@
     },
     {
       "name": "Redump - Nintendo - GameCube - NKit RVZ [zstd-19-128k]",
-      "downloaded_bytes": 1370356120986,
-      "downloaded_human": "1.25 TiB",
+      "downloaded_bytes": 1566386934150,
+      "downloaded_human": "1.42 TiB",
       "target_tib": 1.48,
-      "percent": 84.21,
-      "speed": "29.546 MiB/s",
-      "eta": "2h20m11s",
+      "percent": 96.26,
+      "speed": "26.830 MiB/s",
+      "eta": "38m16s",
       "status": "downloading"
     },
     {
@@ -172,8 +172,8 @@
       "downloaded_human": "2.99 TiB",
       "target_tib": 2.99,
       "percent": 99.96,
-      "speed": "29.546 MiB/s",
-      "eta": "2h20m11s",
+      "speed": "26.830 MiB/s",
+      "eta": "38m16s",
       "status": "downloading"
     },
     {
@@ -208,12 +208,12 @@
     },
     {
       "name": "TOSEC-ISO",
-      "downloaded_bytes": 5890669595473,
-      "downloaded_human": "5.36 TiB",
+      "downloaded_bytes": 6028033050514,
+      "downloaded_human": "5.48 TiB",
       "target_tib": 6.05,
-      "percent": 88.55,
-      "speed": "21.618 MiB/s",
-      "eta": "18h59m51s",
+      "percent": 90.62,
+      "speed": "29.852 MiB/s",
+      "eta": "11h51m17s",
       "status": "downloading"
     },
     {
@@ -253,7 +253,7 @@
       "target_tib": 1.64,
       "percent": 100,
       "speed": "445.093 KiB/s",
-      "eta": "13h53m40s",
+      "eta": "12h13m5s",
       "status": "downloading"
     },
     {
