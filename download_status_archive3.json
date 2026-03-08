@@ -1,29 +1,29 @@
 {
-  "timestamp": "2026-03-07T23:11:45Z",
+  "timestamp": "2026-03-08T04:40:48Z",
   "server": "archive3",
   "disk_total": "44T",
-  "disk_used": "30T",
-  "disk_used_bytes": 32339448864768,
-  "disk_percent": 69.0,
+  "disk_used": "32T",
+  "disk_used_bytes": 34207424933888,
+  "disk_percent": 72.0,
   "collections": [
     {
       "name": "No-Intro - Nintendo (all subcollections)",
-      "downloaded_bytes": 18476124331023,
-      "downloaded_human": "16.80 TiB",
+      "downloaded_bytes": 18860976209462,
+      "downloaded_human": "17.15 TiB",
       "target_tib": 18.04,
-      "percent": 93.15,
-      "speed": "24.181 MiB/s",
-      "eta": "14h37m43s",
+      "percent": 95.09,
+      "speed": "17.882 MiB/s",
+      "eta": "14h4m48s",
       "status": "downloading"
     },
     {
       "name": "No-Intro - Sony (all subcollections)",
-      "downloaded_bytes": 11075790473735,
-      "downloaded_human": "10.07 TiB",
+      "downloaded_bytes": 12889494818627,
+      "downloaded_human": "11.72 TiB",
       "target_tib": 24.78,
-      "percent": 40.65,
-      "speed": "81.945 MiB/s",
-      "eta": "2d2h25m",
+      "percent": 47.31,
+      "speed": "88.666 MiB/s",
+      "eta": "1d17h10m",
       "status": "downloading"
     },
     {
