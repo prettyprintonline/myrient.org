@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-03-08T22:11:25Z",
+  "timestamp": "2026-03-08T23:12:23Z",
   "server": "archive2",
   "disk_total": "57T",
   "disk_used": "52T",
-  "disk_used_bytes": 56190325899264,
+  "disk_used_bytes": 56381774565376,
   "disk_percent": 95.0,
   "collections": [
     {
       "name": "Eggman's Arcade Repository",
-      "downloaded_bytes": 4805765129035,
-      "downloaded_human": "4.37 TiB",
+      "downloaded_bytes": 4923193387318,
+      "downloaded_human": "4.48 TiB",
       "target_tib": 2.79,
       "percent": 100,
-      "speed": "38.737 MiB/s",
-      "eta": "1d3h56m22s",
+      "speed": "32.593 MiB/s",
+      "eta": "1d8h15m20s",
       "status": "downloading"
     },
     {
@@ -48,12 +48,12 @@
     },
     {
       "name": "Laserdisc Collection",
-      "downloaded_bytes": 4371183236171,
-      "downloaded_human": "3.98 TiB",
+      "downloaded_bytes": 4272036956939,
+      "downloaded_human": "3.89 TiB",
       "target_tib": 4.37,
-      "percent": 90.97,
+      "percent": 88.91,
       "speed": "463.840 KiB/s",
-      "eta": "12w5d8h41m3s",
+      "eta": "12w23h40m42s",
       "status": "downloading"
     },
     {
@@ -68,12 +68,12 @@
     },
     {
       "name": "MAME",
-      "downloaded_bytes": 1093305914456,
+      "downloaded_bytes": 1093305887094,
       "downloaded_human": "1018.22 GiB",
       "target_tib": 5.96,
       "percent": 16.68,
       "speed": "340.520 KiB/s",
-      "eta": "1d3h5m40s",
+      "eta": "1d4h6m39s",
       "status": "downloading"
     },
     {
@@ -208,12 +208,12 @@
     },
     {
       "name": "TOSEC-ISO",
-      "downloaded_bytes": 6063701370682,
-      "downloaded_human": "5.51 TiB",
+      "downloaded_bytes": 6162538766558,
+      "downloaded_human": "5.60 TiB",
       "target_tib": 6.05,
-      "percent": 91.16,
-      "speed": "38.711 MiB/s",
-      "eta": "7h35m10s",
+      "percent": 92.64,
+      "speed": "41.252 MiB/s",
+      "eta": "6h20m51s",
       "status": "downloading"
     },
     {
@@ -253,7 +253,7 @@
       "target_tib": 1.64,
       "percent": 100,
       "speed": "445.093 KiB/s",
-      "eta": "9h43s",
+      "eta": "8h40m57s",
       "status": "downloading"
     },
     {
