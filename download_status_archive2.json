@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-03-09T20:16:21Z",
+  "timestamp": "2026-03-09T22:14:36Z",
   "server": "archive2",
   "disk_total": "57T",
-  "disk_used": "54T",
-  "disk_used_bytes": 59292071145472,
-  "disk_percent": 95.0,
+  "disk_used": "55T",
+  "disk_used_bytes": 59552459632640,
+  "disk_percent": 96.0,
   "collections": [
     {
       "name": "Eggman's Arcade Repository",
-      "downloaded_bytes": 7421576233076,
-      "downloaded_human": "6.75 TiB",
+      "downloaded_bytes": 7695163427766,
+      "downloaded_human": "7.00 TiB",
       "target_tib": 2.79,
       "percent": 100,
-      "speed": "38.094 MiB/s",
-      "eta": "10h9m14s",
+      "speed": "37.664 MiB/s",
+      "eta": "8h20m47s",
       "status": "downloading"
     },
     {
@@ -48,12 +48,12 @@
     },
     {
       "name": "Laserdisc Collection",
-      "downloaded_bytes": 4333059154570,
-      "downloaded_human": "3.94 TiB",
+      "downloaded_bytes": 4222723289603,
+      "downloaded_human": "3.84 TiB",
       "target_tib": 4.37,
-      "percent": 90.18,
-      "speed": "37.184 MiB/s",
-      "eta": "9h10m53s",
+      "percent": 87.88,
+      "speed": "36.838 MiB/s",
+      "eta": "7h23m45s",
       "status": "downloading"
     },
     {
@@ -68,12 +68,12 @@
     },
     {
       "name": "MAME",
-      "downloaded_bytes": 1105882672854,
+      "downloaded_bytes": 1105883498935,
       "downloaded_human": "1.01 TiB",
       "target_tib": 5.96,
       "percent": 16.88,
       "speed": "0 B/s",
-      "eta": "--",
+      "eta": "4",
       "status": "downloading"
     },
     {
@@ -102,8 +102,8 @@
       "downloaded_human": "1.48 TiB",
       "target_tib": 1.48,
       "percent": 100,
-      "speed": "33.381 MiB/s",
-      "eta": "3h34m8s",
+      "speed": "33.907 MiB/s",
+      "eta": "1h32m5s",
       "status": "downloading"
     },
     {
@@ -168,12 +168,12 @@
     },
     {
       "name": "Redump - Sony - PlayStation",
-      "downloaded_bytes": 3286753110075,
+      "downloaded_bytes": 3286672771012,
       "downloaded_human": "2.99 TiB",
       "target_tib": 2.99,
-      "percent": 99.98,
-      "speed": "33.381 MiB/s",
-      "eta": "3h34m8s",
+      "percent": 99.97,
+      "speed": "33.907 MiB/s",
+      "eta": "1h32m5s",
       "status": "downloading"
     },
     {
