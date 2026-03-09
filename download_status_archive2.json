@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-03-09T10:26:10Z",
+  "timestamp": "2026-03-09T14:29:25Z",
   "server": "archive2",
   "disk_total": "57T",
-  "disk_used": "53T",
-  "disk_used_bytes": 58033453314048,
-  "disk_percent": 93.0,
+  "disk_used": "54T",
+  "disk_used_bytes": 58545996353536,
+  "disk_percent": 94.0,
   "collections": [
     {
       "name": "Eggman's Arcade Repository",
-      "downloaded_bytes": 6126262129525,
-      "downloaded_human": "5.57 TiB",
+      "downloaded_bytes": 6620734781120,
+      "downloaded_human": "6.02 TiB",
       "target_tib": 2.79,
       "percent": 100,
-      "speed": "38.851 MiB/s",
-      "eta": "18h47m16s",
+      "speed": "29.353 MiB/s",
+      "eta": "20h24m42s",
       "status": "downloading"
     },
     {
@@ -48,12 +48,12 @@
     },
     {
       "name": "Laserdisc Collection",
-      "downloaded_bytes": 4325500315960,
-      "downloaded_human": "3.93 TiB",
+      "downloaded_bytes": 4357253595672,
+      "downloaded_human": "3.96 TiB",
       "target_tib": 4.37,
-      "percent": 90.02,
-      "speed": "29.838 MiB/s",
-      "eta": "21h29m11s",
+      "percent": 90.68,
+      "speed": "50.736 MiB/s",
+      "eta": "10h35m48s",
       "status": "downloading"
     },
     {
@@ -68,12 +68,12 @@
     },
     {
       "name": "MAME",
-      "downloaded_bytes": 1094060708545,
-      "downloaded_human": "1018.92 GiB",
+      "downloaded_bytes": 1100290031220,
+      "downloaded_human": "1.00 TiB",
       "target_tib": 5.96,
-      "percent": 16.7,
-      "speed": "385 B/s",
-      "eta": "26w3d16h42m24s",
+      "percent": 16.79,
+      "speed": "0 B/s",
+      "eta": "--",
       "status": "downloading"
     },
     {
@@ -102,8 +102,8 @@
       "downloaded_human": "1.48 TiB",
       "target_tib": 1.48,
       "percent": 100,
-      "speed": "39.335 MiB/s",
-      "eta": "11h49m31s",
+      "speed": "29.589 MiB/s",
+      "eta": "11h13m26s",
       "status": "downloading"
     },
     {
@@ -168,12 +168,12 @@
     },
     {
       "name": "Redump - Sony - PlayStation",
-      "downloaded_bytes": 3287191740797,
+      "downloaded_bytes": 3287082855799,
       "downloaded_human": "2.99 TiB",
       "target_tib": 2.99,
       "percent": 99.99,
-      "speed": "39.335 MiB/s",
-      "eta": "11h49m31s",
+      "speed": "29.589 MiB/s",
+      "eta": "11h13m26s",
       "status": "downloading"
     },
     {
