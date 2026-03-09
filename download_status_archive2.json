@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-03-09T04:45:12Z",
+  "timestamp": "2026-03-09T07:31:02Z",
   "server": "archive2",
   "disk_total": "57T",
   "disk_used": "53T",
-  "disk_used_bytes": 57385077493760,
-  "disk_percent": 97.0,
+  "disk_used_bytes": 57678768115712,
+  "disk_percent": 98.0,
   "collections": [
     {
       "name": "Eggman's Arcade Repository",
-      "downloaded_bytes": 5489188025791,
-      "downloaded_human": "4.99 TiB",
+      "downloaded_bytes": 5766963775755,
+      "downloaded_human": "5.25 TiB",
       "target_tib": 2.79,
       "percent": 100,
-      "speed": "27.011 MiB/s",
-      "eta": "1d9h22m12s",
+      "speed": "26.856 MiB/s",
+      "eta": "1d6h46m44s",
       "status": "downloading"
     },
     {
@@ -48,12 +48,12 @@
     },
     {
       "name": "Laserdisc Collection",
-      "downloaded_bytes": 4644881760955,
-      "downloaded_human": "4.22 TiB",
+      "downloaded_bytes": 4448698665321,
+      "downloaded_human": "4.05 TiB",
       "target_tib": 4.37,
-      "percent": 96.67,
+      "percent": 92.59,
       "speed": "463.840 KiB/s",
-      "eta": "9w5d14h45m15s",
+      "eta": "9w1d36m6s",
       "status": "downloading"
     },
     {
@@ -68,12 +68,12 @@
     },
     {
       "name": "MAME",
-      "downloaded_bytes": 1093598564798,
-      "downloaded_human": "1018.49 GiB",
+      "downloaded_bytes": 1093834017351,
+      "downloaded_human": "1018.71 GiB",
       "target_tib": 5.96,
       "percent": 16.69,
       "speed": "340.520 KiB/s",
-      "eta": "1d5h27m9s",
+      "eta": "1d5h33m10s",
       "status": "downloading"
     },
     {
@@ -102,8 +102,8 @@
       "downloaded_human": "1.48 TiB",
       "target_tib": 1.48,
       "percent": 100,
-      "speed": "25.094 MiB/s",
-      "eta": "1d1h1m24s",
+      "speed": "24.781 MiB/s",
+      "eta": "22h31m47s",
       "status": "downloading"
     },
     {
@@ -168,12 +168,12 @@
     },
     {
       "name": "Redump - Sony - PlayStation",
-      "downloaded_bytes": 3287141362591,
+      "downloaded_bytes": 3287369445081,
       "downloaded_human": "2.99 TiB",
       "target_tib": 2.99,
       "percent": 99.99,
-      "speed": "25.094 MiB/s",
-      "eta": "1d1h1m24s",
+      "speed": "24.781 MiB/s",
+      "eta": "22h31m47s",
       "status": "downloading"
     },
     {
@@ -208,12 +208,12 @@
     },
     {
       "name": "TOSEC-ISO",
-      "downloaded_bytes": 6591751883767,
-      "downloaded_human": "6.00 TiB",
+      "downloaded_bytes": 6649589562745,
+      "downloaded_human": "6.05 TiB",
       "target_tib": 6.05,
-      "percent": 99.09,
-      "speed": "28.883 MiB/s",
-      "eta": "3h47m54s",
+      "percent": 99.96,
+      "speed": "25.875 MiB/s",
+      "eta": "1h20m",
       "status": "downloading"
     },
     {
@@ -248,12 +248,12 @@
     },
     {
       "name": "bitsavers",
-      "downloaded_bytes": 1808006561983,
+      "downloaded_bytes": 1805393556850,
       "downloaded_human": "1.64 TiB",
       "target_tib": 1.64,
       "percent": 100,
       "speed": "445.093 KiB/s",
-      "eta": "1d10h40m57s",
+      "eta": "1d10h1m42s",
       "status": "downloading"
     },
     {
