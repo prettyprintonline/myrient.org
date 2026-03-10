@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-03-10T04:41:21Z",
+  "timestamp": "2026-03-10T07:24:26Z",
   "server": "archive2",
   "disk_total": "57T",
   "disk_used": "56T",
-  "disk_used_bytes": 60745457508352,
+  "disk_used_bytes": 60747691479040,
   "disk_percent": 98.0,
   "collections": [
     {
@@ -48,12 +48,12 @@
     },
     {
       "name": "Laserdisc Collection",
-      "downloaded_bytes": 4804646817855,
+      "downloaded_bytes": 4804710318561,
       "downloaded_human": "4.37 TiB",
       "target_tib": 4.37,
       "percent": 100.0,
-      "speed": "197.633 KiB/s",
-      "eta": "3w4d4h35m58s",
+      "speed": "6.719 MiB/s",
+      "eta": "44m30s",
       "status": "downloading"
     },
     {
@@ -68,12 +68,12 @@
     },
     {
       "name": "MAME",
-      "downloaded_bytes": 1137399205740,
-      "downloaded_human": "1.03 TiB",
+      "downloaded_bytes": 1139567736001,
+      "downloaded_human": "1.04 TiB",
       "target_tib": 5.96,
-      "percent": 17.36,
-      "speed": "19.277 KiB/s",
-      "eta": "8w6d23h19m51",
+      "percent": 17.39,
+      "speed": "10.293 KiB/s",
+      "eta": "19w3d12h34m3",
       "status": "downloading"
     },
     {
