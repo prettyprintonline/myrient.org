@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-03-10T07:24:26Z",
+  "timestamp": "2026-03-10T09:23:45Z",
   "server": "archive3",
   "disk_total": "44T",
   "disk_used": "43T",
-  "disk_used_bytes": 46763345068032,
+  "disk_used_bytes": 46758585868288,
   "disk_percent": 99.0,
   "collections": [
     {
@@ -18,12 +18,12 @@
     },
     {
       "name": "No-Intro - Sony (all subcollections)",
-      "downloaded_bytes": 27255639488784,
+      "downloaded_bytes": 27253560950676,
       "downloaded_human": "24.79 TiB",
       "target_tib": 24.78,
       "percent": 100,
-      "speed": "--",
-      "eta": "--",
+      "speed": "69.235 MiB/s",
+      "eta": "0s",
       "status": "downloading"
     },
     {
