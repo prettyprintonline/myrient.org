@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-03-12T17:25:47Z",
+  "timestamp": "2026-03-12T19:24:08Z",
   "server": "archive1",
   "disk_total": "58T",
   "disk_used": "43T",
-  "disk_used_bytes": 46728586014720,
+  "disk_used_bytes": 46728588623872,
   "disk_percent": 74.0,
   "collections": [
     {
       "name": "Internet Archive",
-      "downloaded_bytes": 44074985497688,
-      "downloaded_human": "40.09 TiB",
+      "downloaded_bytes": 44146909677721,
+      "downloaded_human": "40.15 TiB",
       "target_tib": 40.48,
-      "percent": 99.03,
-      "speed": "95.324 MiB/s",
-      "eta": "3h2m46s",
+      "percent": 99.19,
+      "speed": "95.534 MiB/s",
+      "eta": "2h48m14s",
       "status": "downloading"
     },
     {
