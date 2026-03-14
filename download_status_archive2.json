@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-03-14T20:12:39Z",
+  "timestamp": "2026-03-14T21:13:43Z",
   "server": "archive2",
   "disk_total": "57T",
   "disk_used": "57T",
-  "disk_used_bytes": 61883357470720,
+  "disk_used_bytes": 61915404951552,
   "disk_percent": 99.0,
   "collections": [
     {
@@ -68,12 +68,12 @@
     },
     {
       "name": "MAME",
-      "downloaded_bytes": 2852872096766,
-      "downloaded_human": "2.59 TiB",
+      "downloaded_bytes": 2883415018352,
+      "downloaded_human": "2.62 TiB",
       "target_tib": 5.96,
-      "percent": 43.53,
+      "percent": 44.0,
       "speed": "1.431 KiB/s",
-      "eta": "4",
+      "eta": "3",
       "status": "downloading"
     },
     {
