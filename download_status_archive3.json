@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-03-14T23:13:32Z",
+  "timestamp": "2026-03-15T05:37:58Z",
   "server": "archive3",
   "disk_total": "44T",
   "disk_used": "43T",
-  "disk_used_bytes": 46758673969152,
+  "disk_used_bytes": 46758682357760,
   "disk_percent": 99.0,
   "collections": [
     {
