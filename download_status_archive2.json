@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-20T23:14:24Z",
+  "timestamp": "2026-03-21T04:39:41Z",
   "server": "archive2",
   "disk_total": "57T",
   "disk_used": "57T",
@@ -73,7 +73,7 @@
       "target_tib": 5.96,
       "percent": 58.26,
       "speed": "1.431 KiB/s",
-      "eta": "51w3d15h41m24s",
+      "eta": "51w8h45m57s",
       "status": "downloading"
     },
     {
